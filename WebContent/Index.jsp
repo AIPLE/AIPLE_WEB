@@ -14,7 +14,7 @@
 	</header>
 	<section>
 		<div>
-			레포 이동후 테스트 페이지를 새로고침해보세요.
+			레포 이동후 테스트 중입니다. 페이지를 새로고침해보세요.
 			<%
 				Random rand = new Random();
 				for(int i = 0; i < 10; i++)
