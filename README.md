@@ -10,7 +10,7 @@
 [![issue badge](https://img.shields.io/badge/Github-Changhyeon--Hwang-black?logo=github)](https://github.com/HwangChangHyeon)
 
 # AI TEAM - REPOSITORY
-https://github.com/SeoYoungDeok/AIPLE_Project_AI
+https://github.com/AIPLE/AIPLE_AI
 
 # 공동 개발
 ## Comghana - Jieun_Jang (장지은)
