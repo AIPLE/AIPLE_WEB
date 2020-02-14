@@ -39,8 +39,6 @@ https://github.com/AIPLE/AIPLE_AI
 ## INFO
 > 배포 Branch는 dep입니다. master Branch는 개발 편의상 기본작업 Branch로 사용합니다.
 
-> 자동 서버 배포로인해 classfile은 AIPLE_WEB/WebContent/WEB-INF/classes 경로로 설정을 해야합니다.
-
 ## Security Info
 > 로그인 보안 및 민감정보 암호화 PBKDF2 적용. (SHA512 와 함께 작동)
 <br>
