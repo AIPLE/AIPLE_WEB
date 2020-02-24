@@ -5,6 +5,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="image/favicon.ico">
+<link rel="icon" href="image/favicon.ico">
 <meta charset="UTF-8">
 <title>Aiple</title>
 </head>
@@ -22,33 +24,6 @@
 			%>
 			<br>
 			<%=rand.nextInt()%>
-			<%}
-				String hash = request.getParameter("hash");
-				String hash1 = "";
-				if(hash!=null){
-					hash1 = PBKDF2_Encryption.createHash(request.getParameter("hash"));
-			%>	
-			<br>
-					<%=hash1%>
-			<%}%>
-
-			<form method="post" action="Index.jsp">
-				<input type="text" name="hash" size="50">
-				<input type="submit">
-			</form>
-			<form method="post" action="Index.jsp">
-			origin
-				<input type="text" name="origin" size="10">
-			hash
-				<input type="text" name="hash2" size="50">
-				<input type="submit">
-			</form>
-			<%
-			String hash2 = request.getParameter("hash2");
-			String origin = request.getParameter("origin");
-			if(hash2!=null && origin!=null){
-			%>
-			검증결과 :	<%=PBKDF2_Encryption.validatePassword(origin, hash2)%>
 			<%}%>
 		</div>
 	</section>
