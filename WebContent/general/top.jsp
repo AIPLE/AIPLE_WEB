@@ -3,9 +3,14 @@
 <a href="Index.jsp"><img alt="로고" src="image/logo.png" width="55px" height="55px"></a>
 <link rel="stylesheet" href="css/darkmode.css">
 <script>
-	function myFunction() {
-	  var element = document.body;
-	  element.classList.toggle("dark-mode");
+	var element = document.body;
+	if(<%=application.getAttribute("darkmode")%> == true){
+		element.classList.toggle("dark-mode", true);
+	}else{
+		element.classList.toggle("dark-mode", false);
+	}
+	function darkmode(){
+		location.href="ProcPage/ToggleDarkModeProc.jsp";
 	}
 </script>
 <% if(session.getAttribute("loginSession") != null){%>
@@ -15,4 +20,4 @@
 	<a href="signIn.jsp">로그인</a>
 	<a href="signUp.jsp">회원가입</a>
 <%}%>
-<button onclick="myFunction()">Toggle mode</button>
+<button onclick="darkmode()">Toggle mode</button>
