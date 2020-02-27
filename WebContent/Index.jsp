@@ -25,6 +25,13 @@
 			<br>
 			<%=rand.nextInt()%>
 			<%}%>
+			<br>
+			UUID 테스트
+			<br>
+			UUID : <%= request.getParameter("UUID") %>
+			<form method="post" action="ProcPage/UUIDCreateProc.jsp">
+				<input type="submit" value="UUID 발급">
+			</form>
 		</div>
 	</section>
 	<footer>
