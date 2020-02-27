@@ -9,7 +9,7 @@
 	if(loginSession == null){
 		result = UID.createUUID("unknown:"+session.getId());
 	}else{
-		result = UID.createUUID(loginSession);
+		result = UID.createUUID("user:"+ loginSession);
 	}
 	if(result.equals("false")){
 		response.sendRedirect("../Index.jsp?UUID=ERROR");
