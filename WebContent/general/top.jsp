@@ -20,4 +20,5 @@
 	<a href="signIn.jsp">로그인</a>
 	<a href="signUp.jsp">회원가입</a>
 <%}%>
+<a href="learningPage.jsp">AI러닝 옵션 테스트 페이지</a>
 <button onclick="darkmode()">Toggle mode</button>
