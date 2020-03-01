@@ -2,13 +2,13 @@
     pageEncoding="UTF-8"%>
 <%
 try{
-	if(application.getAttribute("darkmode").equals("true")){
-		application.setAttribute("darkmode", "false");
+	if(session.getAttribute("darkmode").equals("true")){
+		session.setAttribute("darkmode", "false");
 	}else{
-		application.setAttribute("darkmode", "true");
+		session.setAttribute("darkmode", "true");
 	}
 }catch (NullPointerException e){
-	application.setAttribute("darkmode", "true");
+	session.setAttribute("darkmode", "true");
 }finally{
 	response.sendRedirect("../Index.jsp");
 }

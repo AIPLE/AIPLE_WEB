@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="css/darkmode.css">
 <script>
 	var element = document.body;
-	if(<%=application.getAttribute("darkmode")%> == true){
+	if(<%=session.getAttribute("darkmode")%> == true){
 		element.classList.toggle("dark-mode", true);
 	}else{
 		element.classList.toggle("dark-mode", false);
