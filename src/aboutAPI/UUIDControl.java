@@ -3,6 +3,7 @@ package aboutAPI;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.UUID;
 
 import secret.DBConnectionMgr;
@@ -41,28 +42,20 @@ public class UUIDControl {
         Connection con = null;
         PreparedStatement pstmt = null;
         boolean flag = false;
+        Date today = new Date();
         SimpleDateFormat timeFormat = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
-        java.util.Date time = new java.util.Date();
+
         try {
             con = pool.getConnection();
-            // id, password, name nickname, email, time 순서
-            String strQuery = "insert into API_FolderUUID values(?,json_object(?,?,?,?),?)"; 
+            String strQuery = "insert into API_FolderUUID values(?,?,?)"; 
             pstmt = con.prepareStatement(strQuery);
             pstmt.setString(1, UID.toString());
-            
-            //JSON 입력은 여기부터
-            pstmt.setString(2, "date");
-            pstmt.setString(3, time.toString());
-            pstmt.setString(4, "data");
-            pstmt.setString(5, "");
-            // 여기까지 
-         
-            pstmt.setString(6, owner);
+            pstmt.setString(2, timeFormat.format(today));
+            pstmt.setString(3, owner);
             int count = pstmt.executeUpdate();
             if (count == 1) {
                 flag = true;
             }
-
         } catch (Exception ex) {
             System.out.println("Exception" + ex);
         } finally {
@@ -70,4 +63,5 @@ public class UUIDControl {
         }
         return flag;
 	}
+	
 }
