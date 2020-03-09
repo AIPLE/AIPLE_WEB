@@ -8,7 +8,7 @@ try{
 		session.setAttribute("darkmode", "true");
 	}
 }catch (NullPointerException e){
-	session.setAttribute("darkmode", "true");
+	session.setAttribute("darkmode", "false");
 }finally{
 	response.sendRedirect("../Index.jsp");
 }

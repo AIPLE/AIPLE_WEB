@@ -13,8 +13,8 @@ public class AILearningOptionBean {
 	private Integer miniDatchSize;
 	private String optimizer; // SGD, Momentum, Nesterov, AdaGrad, RMSprop, Adam 종류
 	private Integer optimizerParam;
-	private String initStdType;
-	private Float initStdValue;
+	private String initStdType; // w_init_std 가중치 초기화 방법
+	private Float initStdValue; // w_init_std 가중치 초기화 표준편차
 	
 	public Integer getInputSize() {
 		return inputSize;
