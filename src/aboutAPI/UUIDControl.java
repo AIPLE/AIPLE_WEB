@@ -46,16 +46,18 @@ public class UUIDControl {
         try {
             con = pool.getConnection();
             // id, password, name nickname, email, time 순서
-            String strQuery = "insert into API_FolderUUID values(?,json_object(?,?),?)"; 
+            String strQuery = "insert into API_FolderUUID values(?,json_object(?,?,?,?),?)"; 
             pstmt = con.prepareStatement(strQuery);
             pstmt.setString(1, UID.toString());
             
             //JSON 입력은 여기부터
             pstmt.setString(2, "date");
             pstmt.setString(3, time.toString());
+            pstmt.setString(4, "data");
+            pstmt.setString(5, "");
             // 여기까지 
          
-            pstmt.setString(4, owner);
+            pstmt.setString(6, owner);
             int count = pstmt.executeUpdate();
             if (count == 1) {
                 flag = true;
