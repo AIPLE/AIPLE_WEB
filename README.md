@@ -34,7 +34,8 @@ https://github.com/AIPLE/AIPLE_AI
 - AI Team
 
 ## 사이트 개발 기획
-- 디자인 및 레이아웃 기획 (준비중)
+- 디자인 및 레이아웃 기획(준비중)
+- https://ovenapp.io/view/D8Lqyk3CU6e9mfP8aSSItW8sWbVtr2az/
 
 ## INFO
 > 배포 Branch는 dep입니다. master Branch는 개발 편의상 기본작업 Branch로 사용합니다.
