@@ -25,10 +25,10 @@ public class AILearningOption {
         boolean flag = false;
         try {
             con = pool.getConnection();
-            String strQuery = "insert into API_Data values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"; 
+            String strQuery = "insert into API_LearingOption values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"; 
             pstmt = con.prepareStatement(strQuery);
             pstmt.setString(1, UID.toString());
-            pstmt.setString(2, "");       
+            pstmt.setString(2, "1");       
             pstmt.setString(3, options.getInputSize().toString());       
             pstmt.setString(4, options.getHiddenSize());       
             pstmt.setString(5, options.getOutputSize().toString());       

@@ -26,6 +26,12 @@
 			<%=rand.nextInt()%>
 			<%}%>
 		</div>
+		<div>
+		uuid 생성후 소켓 전송 테스트.
+		<form action="ProcPage/SendSocketProc.jsp">
+				<input type="submit">
+		</form>
+		</div>
 	</section>
 	<footer>
 		<jsp:include page="general/bottom.jsp" flush="false" />
