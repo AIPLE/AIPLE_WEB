@@ -25,13 +25,12 @@
 			<br>
 			<%=rand.nextInt()%>
 			<%}%>
-			<br>
-			UUID 테스트
-			<br>
-			UUID : <p id="uuid"><%= request.getParameter("UUID") %></p>
-			<form method="post" action="ProcPage/UUIDCreateProc.jsp">
-				<input type="submit" value="UUID 발급">
-			</form>
+		</div>
+		<div>
+		uuid 생성후 소켓 전송 테스트.
+		<form action="ProcPage/SendSocketProc.jsp">
+				<input type="submit">
+		</form>
 		</div>
 	</section>
 	<footer>

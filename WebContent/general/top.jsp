@@ -2,6 +2,10 @@
     pageEncoding="UTF-8"%>
 <a href="Index.jsp"><img alt="로고" src="image/logo.png" width="55px" height="55px"></a>
 <link rel="stylesheet" href="css/darkmode.css">
+<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <script>
 	var element = document.body;
 	if(<%=session.getAttribute("darkmode")%> == true){
