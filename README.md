@@ -1,7 +1,7 @@
 # Collaboration Info
 ![issue badge](https://img.shields.io/badge/Create%20At-2020%2F01%2F23-brightgreen)
-![issue badge](https://img.shields.io/github/license/devstar1224/AIPLE_Project_Web)
-![issue badge](https://img.shields.io/github/release/devstar1224/AIPLE_Project_Web.svg)
+![issue badge](https://img.shields.io/github/license/AIPLE/AIPLE_WEB)
+![issue badge](https://img.shields.io/github/release/AIPLE/AIPLE_WEB.svg)
 <br>
 [![issue badge](https://img.shields.io/badge/Github-Jieun--Jang-black?logo=github)](https://github.com/comghana)
 [![issue badge](https://img.shields.io/badge/Github-Yoojin--Ryu-black?logo=github)](https://github.com/yyj9434)
